@@ -100,7 +100,7 @@ const Hero = () => {
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4">
         {/* Animated Title */}
         <animated.h1 style={titleSpring} className="text-5xl md:text-6xl font-extrabold mb-4">
-          <span className="text-teal-300">Digital</span> Solutions
+          <span className="text-teal-300">Nubit</span> Solutions
         </animated.h1>
 
         {/* Animated Subtitle */}
