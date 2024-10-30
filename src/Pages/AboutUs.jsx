@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-no-duplicate-props */
+ 
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { useSpring, useTrail, animated } from '@react-spring/web'; // Added useTrail for multiple animations

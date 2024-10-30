@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-no-duplicate-props */
+ 
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
