@@ -19,6 +19,7 @@ export default {
       animation: {
         'fade-in-down': 'fadeInDown 1s ease-out forwards',
         'fade-in-up': 'fadeInUp 1s ease-out forwards',
+        'slide-up': 'slideUp 1s ease-out forwards', // Add slide-up animation
       },
       keyframes: {
         fadeInDown: {
@@ -28,6 +29,10 @@ export default {
         fadeInUp: {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(30px)', opacity: '0' }, // Start lower for a smoother slide effect
+          '100%': { transform: 'translateY(0)', opacity: '1' },
         },
       },
     },

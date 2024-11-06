@@ -19,7 +19,7 @@ const Services = () => {
         {/* Services Section Header */}
         <h2 className="text-5xl font-bold text-center text-blue-800 mb-12">Our Services</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           {/* Web Development Card */}
           <animated.div style={cardAnimation} className="p-8 bg-white rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
