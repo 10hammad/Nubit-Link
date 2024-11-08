@@ -6,6 +6,7 @@ import Contact from './Pages/Contact';   // Import AboutUs page
 import Services from './components/Services';  // Import Services page
 import Footer from './components/Footer';
 import CareerForm from './Pages/Career';
+import ProfileSection from './components/ProfileSection';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/career-form" element={<CareerForm />} />
         </Routes>
         <Services/>
+        <ProfileSection/>
         <Footer/>
       </div>
       
