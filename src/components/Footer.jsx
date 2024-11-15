@@ -74,7 +74,7 @@ const Footer = () => {
         {/* Social Media Icons and Powered By Section */}
         <div className="flex justify-between items-center">
           {/* Social Media Icons */}
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 text-white">
             <a href="#" className="hover:text-gray-300" aria-label="Facebook">
               <FontAwesomeIcon icon={faFacebookF} />
             </a>

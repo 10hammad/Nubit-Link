@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        deepBlue: '#243642',  // Main blue color
-        brightBlue: '#387478', // Accent color for CTAs
-        coolGray: '#629584',  // Background color for sections
+        deepBlue: '#669bbc',  // Main blue color
+        brightBlue: '#1E3A8A', // Accent color for CTAs
+        coolGray: '#FFFFFF',  // Background color for sections
         softYellow: '#E2F1E7', // Highlight color
       },
       backgroundImage: {

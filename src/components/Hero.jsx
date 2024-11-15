@@ -68,15 +68,15 @@ const Hero = () => {
       {/* Main Hero Content */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4 z-30">
         <animated.h1 style={textSpring} className="text-5xl md:text-6xl font-extrabold mb-4">
-          <span className="text-teal-300">Digital</span> Solutions
+          <span className="text-[#1E3A8A]">Digital</span> Solutions
         </animated.h1>
         <animated.p style={textSpring} className="text-lg md:text-xl mb-8">
-          Bringing your <span className="text-teal-300">ideas</span> to life with precision.
+          Bringing your ideas to life with precision.
         </animated.p>
-        <a href="#get-started" className="bg-teal-500 hover:bg-teal-600 text-white py-3 px-8 rounded-full text-lg font-semibold mb-4">
+        <a href="#get-started" className="bg-[#1E3A8A] hover:bg-[#0f4c75] text-white py-3 px-8 rounded-full text-lg font-semibold mb-4">
           Get Started
         </a>
-        <a href="#learn-more" className="text-teal-300 underline">
+        <a href="#learn-more" className="text-white underline">
           Learn More
         </a>
       </div>

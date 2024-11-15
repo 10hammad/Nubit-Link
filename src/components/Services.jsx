@@ -1,17 +1,24 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web'; // Import React Spring
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faSearch, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS styles
 
 const Services = () => {
-  // Animation for the service cards
+  // Animation for the service cards with React Spring
   const cardAnimation = useSpring({
     from: { opacity: 0, transform: 'translateY(50px)' },
     to: { opacity: 1, transform: 'translateY(0px)' },
     delay: 300,
     config: { tension: 200, friction: 20 },
   });
+
+  // Initialize AOS on component mount
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Optional: adjust duration of the AOS animation
+  }, []);
 
   return (
     <section className="bg-gradient-to-b from-blue-50 to-gray-100 py-16">
@@ -22,7 +29,11 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           {/* Web Development Card */}
-          <animated.div style={cardAnimation} className="p-8 bg-white rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+          <animated.div
+            style={cardAnimation}
+            data-aos="flip-left" // Updated to flip-left
+            className="p-8 bg-white rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+          >
             <div className="flex items-center mb-6">
               <FontAwesomeIcon icon={faCode} className="text-blue-700 text-4xl mr-4" />
               <h3 className="text-3xl font-semibold text-blue-700">Web Development</h3>
@@ -36,7 +47,11 @@ const Services = () => {
           </animated.div>
           
           {/* SEO Optimization Card */}
-          <animated.div style={cardAnimation} className="p-8 bg-white rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+          <animated.div
+            style={cardAnimation}
+            data-aos="flip-left" // Updated to flip-left
+            className="p-8 bg-white rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+          >
             <div className="flex items-center mb-6">
               <FontAwesomeIcon icon={faSearch} className="text-green-700 text-4xl mr-4" />
               <h3 className="text-3xl font-semibold text-green-700">SEO Optimization</h3>
@@ -50,7 +65,11 @@ const Services = () => {
           </animated.div>
           
           {/* App Development Card */}
-          <animated.div style={cardAnimation} className="p-8 bg-white rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+          <animated.div
+            style={cardAnimation}
+            data-aos="flip-left" // Updated to flip-left
+            className="p-8 bg-white rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+          >
             <div className="flex items-center mb-6">
               <FontAwesomeIcon icon={faMobileAlt} className="text-yellow-700 text-4xl mr-4" />
               <h3 className="text-3xl font-semibold text-yellow-700">App Development</h3>
